@@ -1,5 +1,4 @@
-# Cisco UCS Platform Emulator (UCSPE) Restart and Restore
-
+# UCSPE Restart and Restore
 The Microsoft PowerShell script named **ucspe-ucsm-restore.ps1** provided in this repository enables automating the restart of a Cisco UCS Platform Emulator (UCSPE) and then restoring the UCS Manager configuration. This can be useful for scenarios that require resetting the Cisco UCSPE to a known good state after being used for testing, training or development on UCS Manager.
 
 
