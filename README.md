@@ -1,9 +1,9 @@
 # UCSPE Restart and Restore
-The Microsoft PowerShell script named **ucspe-ucsm-restore.ps1** provided in this repository enables automating the restart of a Cisco UCS Platform Emulator (UCSPE) and then restoring the UCS Manager configuration. This can be useful for scenarios that require resetting the Cisco UCSPE to a known good state after being used for testing, training or development on UCS Manager.
+The Microsoft PowerShell script named **ucspe-ucsm-restore.ps1** provided in this repository enables automating the restart of a Cisco UCS Platform Emulator (UCSPE) and then restoring the UCS Manager configuration. This can be useful for scenarios that require resetting the Cisco UCSPE to a known good state after being used for testing, training, demonstrations or development on UCS Manager.
 
 
 ## Prerequisites:
-1. Microsoft Windows PowerShell 5 or above. Earlier versions of PowerShell may be supported if the Cisco UCS PowerTool Suite is pre-installed.)
+1. Microsoft Windows PowerShell 5 or above. Earlier versions of PowerShell may be supported if the Cisco UCS PowerTool Suite is pre-installed.
 2. A running Cisco UCSPE virtual machine accessible over your network. More information and downloads for the Cisco UCSPE can be found [here](https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads/ta-p/3648177).
 3. A saved UCS Manager configuration backup file from the targeted UCSPE in an accessible storage location.
 2. [_Optional_] The Cisco UCS PowerTool Suite, available [here](https://software.cisco.com/download/home/286305108/type/284574017/release). If the Cisco UCS PowerTool Suite is not pre-installed, the Cisco.UCSManager PowerShell module will be automatically installed when running **ucspe-ucsm-restore.ps1**. 
@@ -48,11 +48,11 @@ ucspe-ucsm-restore.ps1 -IP 192.168.1.7 -User admin -Password Cisco123 -BackupPat
 
 
 ## Notes and Caveats:
-In some instances, a 503 error may be received when the UCS Manager configuration backup restore is attempted. This an intermittent bug with the UCSPE and can be overcome by re-running the **ucspe-ucsm-restore.ps1** script.
+In some instances, a 503 error may be received when the UCS Manager configuration backup restore is attempted. This is an intermittent bug with the UCSPE and can be overcome by re-running the **ucspe-ucsm-restore.ps1** script.
 
 
 ## Use Cases:
-A modified version of the scripts in this repository are part of the automation used to support and enable the following Cisco Data Center product demonstrations on Cisco dCloud:
+A modified version of the script in this repository is a part of the automation used to support and enable the following Cisco Data Center product demonstrations on Cisco dCloud:
 
 1. _Cisco UCS Management with Intersight v1_
 2. _Cisco UCS Central 2.0 v1_
