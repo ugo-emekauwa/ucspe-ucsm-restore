@@ -27,20 +27,21 @@ The **ucspe-ucsm-restore.ps1** script will also accept positional arguments for 
 PS C:\> .\ucspe-ucsm-restore.ps1 192.168.1.7 admin Cisco123 "C:\Backups\UCS-Config-Backup.xml"
 ```
 
-## Parameters
-### -IP
+## Parameters:
+#### -IP
+
 The -IP parameter is mandatory and specifies the IP address of the targeted UCSPE VM. A resolvable hostname for the targeted UCSPE will also be accepted for the value.
 
-### -User
+#### -User
 The -User parameter is mandatory and specifies the username of the credentials that will be used to log into UCS Manager.
 
-### -Password
+#### -Password
 The -Password parameter is mandatory and specifies the password of the credentials that will be used to log into UCS Manager.
 
-### -BackupPath
+#### -BackupPath
 The -BackupPath parameter is mandatory and specifies the saved storage location of the UCS Manager configuration backup file.
 
-### -MinutesToWait
+#### -MinutesToWait
 The -MinutesToWait parameter is optional and specifies the number of minutes to wait for the UCSPE to restart before attempting to restore the UCS Manager configuration backup. The default setting is 4 minutes. Depending the version and resources (CPU, memory) allocated to the targeted UCSPE VM, the time needed to wait for the UCSPE to fully restart may more or less than the default 4 minutes. If this is the case, the -MinutesToWait parameter can be added to the **ucspe-ucsm-restore.ps1** script. Here is an example in which the wait time has been adjusted to 10 minutes:
 ```powershell
 PS C:\> .\ucspe-ucsm-restore.ps1 -IP 192.168.1.7 -User admin -Password Cisco123 -BackupPath "C:\Backups\UCS-Config-Backup.xml" -MinutesToWait 10
