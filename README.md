@@ -24,7 +24,7 @@ To perform an automated restart and UCS Manager configuration restore on a targe
 ucspe-ucsm-restore.ps1 -IP 192.168.1.7 -User admin -Password Cisco123 -BackupPath "C:\Backups\UCS-Config-Backup.xml"
 ```
 
-The **ucspe-ucsm-restore.ps1** script will also accept positional arguments for the mandatory parameters. Here is an example:
+The **ucspe-ucsm-restore.ps1** script will also accept just the positional values for the mandatory parameters. Here is an example:
 ```powershell
 ucspe-ucsm-restore.ps1 192.168.1.7 admin Cisco123 "C:\Backups\UCS-Config-Backup.xml"
 ```
