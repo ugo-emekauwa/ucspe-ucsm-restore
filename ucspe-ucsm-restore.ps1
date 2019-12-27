@@ -13,7 +13,7 @@ Write-Host "`r`n`r`n`r`n`r`n`r`n$(Get-Date) - Starting the Cisco UCSPE Restart a
 
 # Checking for Cisco.UCSManager Module Installation and Import
 Write-Host "$(Get-Date) - Verifying Cisco.UCSManager module installation..."
-if ((Get-Module -ListAvailable -Name "Cisco.UCSManager").Name -ne "Cisco.UCSManager"){
+If ((Get-Module -ListAvailable -Name "Cisco.UCSManager").Name -ne "Cisco.UCSManager"){
     Write-Host "$(Get-Date) - The Cisco.UCSManager module is not installed. Installing the Cisco.UCSManager module..."
     Install-Module -Name "Cisco.UCSManager" -Force
 } Else {
