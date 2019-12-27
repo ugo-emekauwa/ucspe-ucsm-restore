@@ -3,8 +3,7 @@ The Microsoft PowerShell script named **ucspe-ucsm-restore.ps1** provided in thi
 
 
 ## Prerequisites:
-1. Microsoft Windows PowerShell 5 or above.
-
+1. Microsoft Windows PowerShell 5 or above.<br/>
     **Note:** Earlier versions of PowerShell may be supported if the Cisco UCS PowerTool Suite is pre-installed.
 2. A running Cisco UCSPE virtual machine accessible over your network. More information and downloads for the Cisco UCSPE can be found [here](https://community.cisco.com/t5/unified-computing-system/ucs-platform-emulator-downloads/ta-p/3648177).
 3. A saved UCS Manager configuration backup file from the targeted UCSPE in an accessible storage location.
