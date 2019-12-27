@@ -3,13 +3,13 @@ param (
   [Parameter(Mandatory=$true, Position=1)] [String] $User,
   [Parameter(Mandatory=$true, Position=2)] [String] $Password,
   [Parameter(Mandatory=$true, Position=3)] [String] $BackupPath,
-  [Parameter(Mandatory=$false, Position=4)] [Int] $MinutesToWait = 10
+  [Parameter(Mandatory=$false, Position=4)] [Int] $MinutesToWait = 4
 )
 
-# UCSPE Restart and Restore Script, written by Ugo Emekauwa (uemekauw@cisco.com or uemekauwa@gmail.com)
+# Cisco UCSPE Restart and Restore Script, written by Ugo Emekauwa (uemekauw@cisco.com or uemekauwa@gmail.com)
 
 # Start Script
-Write-Host "`r`n`r`n`r`n`r`n`r`n$(Get-Date) - Starting UCSPE Restart and Restore script"
+Write-Host "`r`n`r`n`r`n`r`n`r`n$(Get-Date) - Starting the Cisco UCSPE Restart and Restore script"
 
 # Checking for Cisco.UCSManager Module Installation and Import
 Write-Host "$(Get-Date) - Verifying Cisco.UCSManager module installation..."
