@@ -28,7 +28,7 @@ ucspe-ucsm-restore.ps1 192.168.1.7 admin Cisco123 "C:\Backups\UCS-Config-Backup.
 ```
 
 ## Parameters:
-### -IP
+### `-IP`
 The -IP parameter is mandatory and specifies the IP address of the targeted UCSPE VM. A resolvable hostname for the targeted UCSPE will also be accepted for the value.
 
 ### -User
