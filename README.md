@@ -19,7 +19,7 @@ The Microsoft PowerShell script named **ucspe-ucsm-restore.ps1** provided in thi
 
 
 ## How to Use:
-The **ucspe-ucsm-restore.ps1** script in this repository provides the ability to perform an automated restart and UCS Manager configuration restore on a targeted UCSPE. The following is an example of command usage and mandatory parameters, in which the targeted UCSPE has an IP address of **192.168.1.7**, the UCS Manager username is **admin**, the UCS Manager password is **Cisco123**, and the storage location path for the UCS Manager configuration backup file is **"C:\Backups\UCS-Config-Backup.xml"**:
+The **ucspe-ucsm-restore.ps1** script provides the ability to perform an automated restart and UCS Manager configuration restore on a targeted UCSPE. The following is an example of command usage and mandatory parameters, in which the targeted UCSPE has an IP address of **192.168.1.7**, the UCS Manager username is **admin**, the UCS Manager password is **Cisco123**, and the storage location path for the UCS Manager configuration backup file is **"C:\Backups\UCS-Config-Backup.xml"**:
 ```powershell
 ucspe-ucsm-restore.ps1 -IP 192.168.1.7 -User admin -Password Cisco123 -BackupPath "C:\Backups\UCS-Config-Backup.xml"
 ```
